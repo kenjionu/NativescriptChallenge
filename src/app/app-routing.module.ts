@@ -4,9 +4,11 @@ import { NativeScriptRouterModule } from '@nativescript/angular'
 
 import { ItemsComponent } from './item/items.component'
 import { ItemDetailComponent } from './item/item-detail.component'
+import { ChallengeComponent } from './challenge/challenge.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/items', pathMatch: 'full' },
+  { path: '', redirectTo: '/challenge', pathMatch: 'full' },
+  { path: 'challenge', component: ChallengeComponent },
   { path: 'items', component: ItemsComponent },
   { path: 'item/:id', component: ItemDetailComponent },
 ]
